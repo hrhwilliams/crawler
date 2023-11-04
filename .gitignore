@@ -1,6 +1,2 @@
 .vscode
-CMakeCache.txt
-CMakeFiles
-
-crawler
-crawler2
+build/

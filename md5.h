@@ -26,6 +26,10 @@
 #ifndef _MD5_H_
 #define _MD5_H_
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #include <stdint.h>
 
 /* POINTER defines a generic pointer type */
@@ -46,5 +50,9 @@ typedef struct {
 void MD5Init(MD5_CTX *);
 void MD5Update(MD5_CTX *, unsigned char*, unsigned int);
 void MD5Final(unsigned char[16], MD5_CTX *);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif // _MD5_H_
